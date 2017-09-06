@@ -9,6 +9,31 @@ Multi-language Char RNN in TensorFlow. You can use this code to generate English
 - Python 2.7.X
 - TensorFlow >= 1.2
 
+## Remarks 
+
+To train:
+
+```
+python3 train.py \
+  --input_file data/remarks.txt  \
+  --name remarks \
+  --num_steps 50 \
+  --num_seqs 32 \
+  --learning_rate 0.01 \
+  --max_steps 20000
+```
+
+
+To sample:
+
+```
+python3 sample.py \
+  --converter_path model/remarks/converter.pkl \
+  --checkpoint_path model/remarks/ \
+  --max_length 1000
+```
+
+
 ## Generate English Text
 
 To train:
