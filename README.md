@@ -19,7 +19,7 @@ python3 train.py \
   --name remarks \
   --num_steps 50 \
   --num_seqs 32 \
-  --learning_rate 0.01 \
+  --learning_rate 0.005 \
   --max_steps 20000
 ```
 
